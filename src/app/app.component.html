@@ -1,10 +1,43 @@
 <h1>Widget example</h1>
 
-<button mat-raised-button (click)="openWidget('yScz5I7ynO')">Open widget (yScz5I7ynO)</button>
-<br /><br />
-<button mat-raised-button (click)="openWidget('yScz5I7ynO', 'dark')">Open widget (yScz5I7ynO, theme=dark)</button>
-<br /><br />
-<button mat-raised-button (click)="openWidget('yScz5I7ynO', null, 'angular_example')">Open widget (yScz5I7ynO, user="angular_example")</button>
-<br /><br />
-<button mat-raised-button (click)="openWidget('YOUR_WIDGET_HASH')">Open widget (YOUR_WIDGET_HASH)</button>
-<br /><br />
+<div style="width: 100%; display: flex">
+  <div>
+    <h2>Sphere Engine Problems Widget</h2>
+    <mat-list vertical=true>
+      <mat-list-item>
+        <button mat-raised-button (click)="openProblemsWidget('yScz5I7ynO', null, null, 'small')">Small widget</button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <button mat-raised-button (click)="openProblemsWidget('yScz5I7ynO', null, null, 'big')">Big widget</button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <button mat-raised-button (click)="openProblemsWidget('yScz5I7ynO', 'dark')">Dark theme</button>
+        <a style="margin-left: 10px;" target="_blank" href="https://docs.sphere-engine.com/problems/widget/integration#theme">Documentation</a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <button mat-raised-button (click)="openProblemsWidget('yScz5I7ynO', null, 'angular_example')">Open widget with user session</button>
+        <a style="margin-left: 10px;" target="_blank" href="https://docs.sphere-engine.com/problems/widget/integration#user-session">Documentation</a>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <div>
+    <h2>Sphere Engine Compilers Widget</h2>
+    <mat-list vertical=true>
+      <mat-list-item>
+        <button mat-raised-button (click)="openCompilersWidget('9e1e25c224b32a941cccc468d284e148', null, 'small')">Small widget</button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <button mat-raised-button (click)="openCompilersWidget('9e1e25c224b32a941cccc468d284e148', null, 'big')">Big widget</button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <button mat-raised-button (click)="openCompilersWidget('9e1e25c224b32a941cccc468d284e148', 'dark')">Dark theme</button>
+        <a style="margin-left: 10px;" target="_blank" href="https://docs.sphere-engine.com/compilers/widget/integration#theme">Documentation</a>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>

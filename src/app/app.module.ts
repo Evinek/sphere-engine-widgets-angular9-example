@@ -6,6 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
@@ -16,6 +19,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     BrowserAnimationsModule,
     MatButtonModule,
     MatDialogModule,
+    MatDividerModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
